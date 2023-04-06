@@ -1,0 +1,26 @@
+{
+  "name": "vite-prisma-incompatibility",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "prisma generate && yarn run vite",
+    "build": "prisma generate && yarn run tsc && yarn run vite build",
+    "preview": "prisma generate && yarn run vite preview",
+    "codegen": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "prisma": "^4.12.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  },
+  "packageManager": "yarn@1.22.19"
+}
