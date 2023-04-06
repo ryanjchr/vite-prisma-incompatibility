@@ -1,6 +1,6 @@
 A repo demonstrating that Vite has issues with re-exporting from `@prisma/client`.
 
-To demonstrate the bug, in `App.tsx` we import `UserRole` through a barrel export of `@prisma/client` from `bug.ts`.
+To demonstrate the bug, in `App.tsx` we generate our Prisma Client from the schema (`prisma generate`), then import `UserRole` through a barrel export of `@prisma/client` from `bug.ts`.
 
 This produces the error: `"Uncaught SyntaxError: The requested module '/src/bug.ts' does not provide an export named 'UserRole'"`
 
